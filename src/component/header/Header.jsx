@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MenuIcon } from "@heroicons/react/outline";
+import Logo from "../../../src/assets/logo@2x.png";
 
 import { Drawer } from "antd";
 // const logo = "src/assets/logo@2x.png";
@@ -24,7 +25,7 @@ const Header = () => {
             <MenuIcon className="h-6 w-6" />
           </button>
         </div> */}
-        <img className="h-20 " src={"src/assets/logo@2x.png"} alt="logo" />
+        <img className="h-20 " src={Logo} alt="logo" />
       </div>
       <div>
         <nav className="space-x-10 lg:flex hidden">
