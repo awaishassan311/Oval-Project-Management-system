@@ -12,15 +12,15 @@ function App() {
     <>
       <Header />
       <Herosection />
-      <Badges />
-      <Workspace />
-      <Roles />
-      <Workspace />
-      <Reviews />
+      {/* <Badges /> */}
+      {/* <Workspace /> */}
+      {/* <Roles />  */}
+      {/* <Workspace /> */}
+      {/* <Reviews /> */}
 
-      <Achievement />
-      <Price />
-      <Footer />
+      {/* <Achievement /> */}
+      {/* <Price /> */}
+      {/* <Footer /> */}
     </>
   );
 }
