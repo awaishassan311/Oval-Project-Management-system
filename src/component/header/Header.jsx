@@ -37,7 +37,7 @@ const Header = () => {
       </div>
       <div className=" hidden md:block">
         <div className=" flex items-center">
-          <p className="px-[40px]">Login</p>
+          <p className="px-[35px]">Login</p>
           <button className="px-[30px] py-4 rounded-md border ml-0 border-gray-600">
             Try for Free
           </button>

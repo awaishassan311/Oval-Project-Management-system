@@ -2,7 +2,7 @@ import React from "react";
 
 const Herosection = () => {
   return (
-    <div class="flex justify-center mt-10">
+    <div className="flex justify-center mt-10">
       <div className="w-full text-black text-center text-[36px] ">
         <p>Maintain, Map, and Master</p>
         Your Comprehensive Tool for{" "}
