@@ -1,5 +1,5 @@
 import React from "react";
-
+import FooterLogo from "../../../src/assets/logo@2x.png";
 const Footer = () => {
   return (
     <div className="bottom-[0rem] left-[0rem] bg-black w-full h-[25.38rem] overflow-hidden text-[1.5rem] text-white">
@@ -8,8 +8,8 @@ const Footer = () => {
           <div className="top-[0rem] left-[2.56rem] overflow-hidden flex flex-col p-[0.63rem] items-center justify-start gap-[0.63rem]">
             <img
               className="w-[6.25rem] h-[6.25rem] object-cover"
-              alt=""
-              src="src\assets\logo1@2x.png"
+              alt="FooterLogo"
+              src={FooterLogo}
             />
             <b className="  ">School Facility Pro</b>
             <div className="  top-[13.13rem] left-[calc(50%_-_99.5px)] text-[1rem]">
