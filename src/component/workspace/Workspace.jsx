@@ -3,51 +3,56 @@ import React from "react";
 
 const Workspace = () => {
   return (
-    <div className=" flex justify-center mt-12">
-      <div className="  bg-white overflow-hidden flex flex-row py-[0.63rem] px-[0rem] items-center justify-start gap-[3.13rem] text-gray-500">
-        <div className="bg-white overflow-hidden flex flex-col py-[0rem] px-[0.63rem] items-start justify-start">
-          <div className="bg-white overflow-hidden flex flex-col py-[0rem] px-[0.63rem] items-start justify-start">
-            <div className=" w-[31.19rem]">
-              <div className=" ">
-                <p className="m-0">{`it will take a couple of hours, but will save your `}</p>
-                <p className="m-0">{`company weeks in the long term. `}</p>
-              </div>
-              <div className=" left-[0rem] text-[4.06rem] text-black">
-                <p className="m-0">Built your</p>
-                <p className="m-0">own workspace.</p>
-              </div>
+    <div className="flex justify-center mt-12">
+      <div className="bg-white flex flex-row items-center justify-start gap-8 text-gray-500">
+        <div className="flex flex-col items-start justify-start">
+          <div className="flex flex-col gap-3">
+            <div className="text-black font-inter text-4xl font-normal leading-normal">
+              <p className="m-0">Build your</p>
+              <p className="m-0">own workspace.</p>
+            </div>
+            <div>
+              <p className="m-0">{`It will take a couple of hours, but will save your `}</p>
+              <p className="m-0">{`company weeks in the long term.`}</p>
             </div>
           </div>
-          <div className="bg-white overflow-hidden flex flex-col p-[0.63rem] items-start justify-start text-[1.5rem] text-black">
-            <div className="relative bg-white w-[30.56rem]  overflow-hidden shrink-0">
-              <b className="top-[0.63rem] ">Create</b>
-              <div className="  top-[3.06rem] left-[1.44rem] text-[1.25rem] font-medium text-gray-500">
-                Easy -to-use apps for each team with no code
-              </div>
-              <div className="  top-[5.19rem] left-[1.44rem] bg-tomato w-[27.75rem]  overflow-hidden" />
+          <div className="flex flex-row">
+            <div className="mt-3 p-3">
               <img
-                className="  top-[1.05rem] left-[0rem] w-[0.54rem] "
+                className="w-3"
+                color="orange-500"
                 alt=""
-                src="/vector-1.svg"
+                src="src\assets\vector-1.svg"
               />
             </div>
-            <div className="bg-white overflow-hidden flex flex-col p-[0.63rem] items-start justify-start gap-[0.63rem]">
-              <b className="relative">Organize</b>
-              <div className="relative text-[1.25rem] font-medium text-gray-500">
-                Work into custom hierarchies, fields and formulas
+            <div className="flex flex-col p-2 mt-3 gap-3">
+              <div className="text-black font-inter text-xl  leading-normal">
+                <b>Create</b>
+                <div className="text-lg font-medium text-gray-500">
+                  Easy-to-use apps for each team with no code
+                </div>
+                <div className="bg-orange-500 h-1 w-full"></div>
               </div>
-            </div>
-            <div className="bg-white overflow-hidden flex flex-col p-[0.63rem] items-start justify-start gap-[0.63rem]">
-              <b className="relative">Visualize</b>
-              <div className="relative text-[1.25rem] font-medium text-gray-500">
-                <p className="m-0">Workflows with Tables, Boards, Timelines,</p>
-                <p className="m-0">{`Charts & more.`}</p>
+              <div className="flex flex-col text-black font-inter text-xl  leading-normal   gap-2">
+                <b>Organize</b>
+                <div className="text-lg font-medium text-gray-500">
+                  Work into custom hierarchies, fields, and formulas
+                </div>
+              </div>
+              <div className="flex flex-col  text-black font-inter text-xl  leading-normal  gap-2">
+                <b>Visualize</b>
+                <div className="text-lg font-medium text-gray-500">
+                  <p className="m-0">
+                    Workflows with Tables, Boards, Timelines,
+                  </p>
+                  <p className="m-0">{`Charts & more.`}</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center w-[701px]  flex-shrink-0 rounded-md bg-[#F5F6F9]">
-          <img className="w-[1210px] " src={badge1} alt="Your Company"></img>
+        <div className="flex justify-center items-center w-160 rounded-md bg-[#F5F6F9]">
+          <img className="w-full" src={badge1} alt="Your Company" />
         </div>
       </div>
     </div>
