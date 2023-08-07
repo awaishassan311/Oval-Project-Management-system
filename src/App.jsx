@@ -9,7 +9,7 @@ import Footer from "./component/footer/Footer";
 import Price from "./component/price plan/Price";
 function App() {
   return (
-    <>
+    <div className="px-4">
       <Header />
       <Herosection />
       <Badges />
@@ -20,7 +20,7 @@ function App() {
       <Achievement />
       <Price />
       <Footer />
-    </>
+    </div>
   );
 }
 

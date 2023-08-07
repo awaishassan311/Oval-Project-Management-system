@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div className="flex justify-evenly items-center py-6">
       <div>
-        {/* <div className="md:block xs:hidden lg:hidden">
+        {/* <div className=" xs:hidden md:block lg:hidden">
           <button>
             <MenuIcon className="h-6 w-6" />
           </button>
@@ -44,19 +44,19 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
         <button onClick={showDrawer}>
           <MenuIcon className="h-6 w-6" />
         </button>
       </div>
       <Drawer
-        className="parent"
         title="Basic Drawer"
         placement={placement}
         closable={false}
         onClose={onClose}
         open={open}
         key={placement}
+        width="700px "
       >
         <p>Some contents...</p>
         <p>Some contents...</p>

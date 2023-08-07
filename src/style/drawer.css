@@ -1,0 +1,4 @@
+.parent:where(.css-dev-only-do-not-override-fpg3f5).ant-drawer-right
+  > .ant-drawer-content-wrapper {
+  width: 90% !important;
+}
