@@ -1,9 +1,9 @@
 import React from "react";
-import FooterLogo from "../../../src/assets/logo@2x.png";
+import FooterLogo from "../../../src/assets/Logo.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-black w-full h-full flex mt-10 align-center gap-3 justify-center text-[1.5rem] text-white">
+    <div className="bg-black w-full h-full flex font-inter px-4 mt-10 align-center gap-3 justify-center text-[1.5rem] text-white">
       <div className="flex flex-col sm:flex-row py-[0.63rem] px-[6.25rem] mt-10 sm:gap-[7.25rem]">
         <div className="flex flex-col items-center gap-[0.63rem] mb-10 sm:mb-0">
           <img

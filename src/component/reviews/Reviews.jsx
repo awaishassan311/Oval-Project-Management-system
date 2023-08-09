@@ -1,5 +1,5 @@
 import React from "react";
-
+import profile from "../../../src/assets/group-171.svg";
 const Reviews = () => {
   const ReviewCard = ({ imgSrc, name, role, children }) => (
     <div className="flex flex-col gap-2">
@@ -15,8 +15,8 @@ const Reviews = () => {
   );
 
   return (
-    <div className="flex justify-center mt-12">
-      <div className="bg-white flex flex-col items-start gap-2 text-[4.06rem]">
+    <div className="flex justify-center px-4 mt-12">
+      <div className="bg-white flex flex-col font-inter justify-center gap-2 text-[4.06rem]">
         <div className="flex gap-[2.5rem]">
           <img className="w-[5.56rem]" alt="" src="src\assets\group-16.svg" />
           <div>
@@ -25,9 +25,9 @@ const Reviews = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row mt-10 gap-14 text-[1.25rem] text-black-70">
+        <div className="flex flex-col lg:flex-row  justify-center items-center mt-10 gap-14 text-[1.25rem] text-black-70">
           <ReviewCard
-            imgSrc="src\assets\group-17.svg"
+            imgSrc={profile}
             name="Jafar Andishmand"
             role="Frontend Designer"
           >
@@ -41,7 +41,7 @@ const Reviews = () => {
           <div className="hidden lg:block border-r-[1px] border-gray-400 h-full"></div>
 
           <ReviewCard
-            imgSrc="src\assets\group-171.svg"
+            imgSrc={profile}
             name="Jafar Andishmand"
             role="Frontend Designer"
           >
@@ -55,7 +55,7 @@ const Reviews = () => {
           <div className="hidden lg:block border-r-[1px] border-gray-400 h-full"></div>
 
           <ReviewCard
-            imgSrc="src\assets\group-172.svg"
+            imgSrc={profile}
             name="Jafar Andishmand"
             role="Frontend Designer"
           >

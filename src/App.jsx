@@ -7,9 +7,11 @@ import Roles from "./component/roles/Roles";
 import Achievement from "./component/achievements/Achievement";
 import Footer from "./component/footer/Footer";
 import Price from "./component/price plan/Price";
+import "typeface-inter";
+
 function App() {
   return (
-    <div className="px-4">
+    <div>
       <Header />
       <Herosection />
       <Badges />

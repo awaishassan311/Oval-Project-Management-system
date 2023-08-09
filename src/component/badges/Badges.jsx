@@ -1,8 +1,8 @@
 import React from "react";
-import badge from "../../assets/badge.png";
+import badge from "../../assets/herosection.svg";
 const Badges = () => {
   return (
-    <div className=" mt-10">
+    <div className=" mt-10 px-4">
       <div className="flex justify-center flex-col items-center mt-14">
         <img className="" src={badge} alt="Your Company"></img>
         <div className="flex p-10 flex-col justify-center items-center gap-1">
