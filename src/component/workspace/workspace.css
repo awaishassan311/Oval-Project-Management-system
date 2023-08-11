@@ -1,8 +1,9 @@
 .mt-3.p-3 {
-  position: relative; /* Set the parent container to position relative */
+  /* position: relative; */
 }
 
 .w-3 {
+  top: 15px;
   position: absolute;
   width: 20px; /* adjust this value to fit the SVG's actual width */
   left: 0; /* or adjust to fit */
@@ -13,9 +14,9 @@
 }
 
 .organizePosition .w-3 {
-  top: 90px; /* adjust this to position the SVG next to the "Organize" action */
+  top: 120px; /* adjust this to position the SVG next to the "Organize" action */
 }
 
 .visualizePosition .w-3 {
-  top: 170px; /* adjust this to position the SVG next to the "Visualize" action */
+  top: 222px; /* adjust this to position the SVG next to the "Visualize" action */
 }

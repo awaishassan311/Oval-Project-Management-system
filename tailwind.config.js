@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         'inter': ['Inter'],
+        'rubik': ['Rubik', 'sans-serif']
       }
     },
   },

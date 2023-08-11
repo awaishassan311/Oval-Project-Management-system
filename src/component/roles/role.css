@@ -1,0 +1,19 @@
+.mt-3.p-3 {
+  position: relative;
+}
+
+.w-3 {
+  top: 0px;
+}
+
+.activePointerPosition1 .w-3 {
+  left: 10px; /* adjust based on the position of "Align" */
+}
+
+.activePointerPosition2 .w-3 {
+  left: 360px; /* adjust based on the position of "Link" */
+}
+
+.activePointerPosition3 .w-3 {
+  left: 700px;
+}

@@ -1,11 +1,12 @@
 import React from "react";
-import profile from "../../../src/assets/group-171.svg";
+import profile from "../../../src/assets/profile.jpg";
+import icon from "../../../src/assets/group-16.svg";
 const Reviews = () => {
   const ReviewCard = ({ imgSrc, name, role, children }) => (
     <div className="flex flex-col gap-2">
       <div className="font-medium">{children}</div>
       <div className="flex items-center gap-2 text-[1rem]">
-        <img className="w-[2.5rem] h-[2.5rem]" alt="" src={imgSrc} />
+        <img className="w-[2.5rem] rounded h-[2.5rem]" alt="" src={imgSrc} />
         <div>
           <div className="font-medium">{name}</div>
           <div className="text-gray-500">{role}</div>
@@ -16,15 +17,16 @@ const Reviews = () => {
 
   return (
     <div className="flex justify-center px-4 mt-12">
-      <div className="bg-white flex flex-col font-inter justify-center gap-2 text-[4.06rem]">
-        <div className="flex gap-[2.5rem]">
-          <img className="w-[5.56rem]" alt="" src="src\assets\group-16.svg" />
-          <div>
-            <p className="m-0">Loved by so many people</p>
-            <p className="m-0">around the world.</p>
+      <div className="bg-white flex flex-col font-inter justify-center gap-2 text-[2.06rem]">
+        <div className="flex item-center justify-center">
+          <div className="flex text-4xl text-bold font-inter gap-[2.5rem]">
+            <img className="w-[5.56rem]" alt="" src={icon} />
+            <div>
+              <p className="m-0">Loved by so many people</p>
+              <p className="m-0">around the world.</p>
+            </div>
           </div>
         </div>
-
         <div className="flex flex-col lg:flex-row  justify-center items-center mt-10 gap-14 text-[1.25rem] text-black-70">
           <ReviewCard
             imgSrc={profile}

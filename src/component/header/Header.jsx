@@ -5,22 +5,25 @@ const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false); // New state for the menu
 
   return (
-    <div className="bg-white mb-40">
-      <header className="absolute inset-x-0 top-2  ">
+    <div className="flex justify-between lg:justify-center mt-6 pb-20">
+      <div className="w-[60%] lg:w-[50%] flex items-center justify-between">
+        <div
+          className="w-[6.25rem] h-[6.25rem] object-cover border-black border-1"
+          style={{
+            backgroundImage: `url(${Logo})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "brightness(-1) invert(1) grayscale(1)", // Modify this filter to achieve your desired effect
+          }}
+        ></div>
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
         >
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img className="h-8 w-auto" src={Logo} alt="" />
-            </a>
-          </div>
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5       text-gray-700"
               onClick={() => setMenuOpen(true)} // Open the menu
             >
               <span className="sr-only">Open main menu</span>
@@ -66,16 +69,12 @@ const Header = () => {
               Contact
             </a>
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Log in <span></span>
-            </a>
-          </div>
         </nav>
-
+        <div className="hidden lg:flex  ">
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <button>Login</button>
+          </a>
+        </div>
         {isMenuOpen && (
           <div className="lg:hidden" role="dialog" aria-modal="true">
             <div className="fixed inset-0 z-50"></div>
@@ -148,7 +147,7 @@ const Header = () => {
             </div>
           </div>
         )}
-      </header>
+      </div>
     </div>
   );
 };

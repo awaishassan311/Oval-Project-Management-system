@@ -1,36 +1,43 @@
 import React, { useState } from "react";
 import pointer from "../../../src/assets/vector-1.svg";
-import badge2 from "../../assets/group-12.svg";
-import badge3 from "../../assets/badge1.png";
-
+import badge1 from "../../assets/role1.svg";
+import badge2 from "../../assets/role2.svg";
+import badge3 from "../../assets/role3.svg";
+import "./role.css";
 const Roles = () => {
   const [activeRole, setActiveRole] = useState("Align"); // Default to "Align"
 
   // Image mapping based on clicked role
   const roleImages = {
-    Align: [badge2],
-    Link: [badge3],
-    Decentralize: [badge2],
+    Align: badge1,
+    Link: badge3,
+    Decentralize: badge2,
   };
 
   return (
     <div className="flex justify-center items-center mt-10 px-4 flex-col">
       <div className="text-center text-gray-500 mb-4">
-        <div className="text-4xl text-black font-inter font-normal leading-normal">
+        <div className="text-4xl text-black font-inter font-bold leading-normal">
           Bring all the roles together.
         </div>
       </div>
-      <div className="mb-4">
+
+      <div className="mb-4 flex flex-col text-center">
         <p className="m-0">We believe in autonomous teams that own their</p>
         <p className="m-0">work and their piece of workspace.</p>
       </div>
-      <div className="flex mt-10 flex-col md:flex-row">
-        <div
-          className={`p-2 mt-1 ${activeRole === "Align" && "activePointer"}`}
-        >
-          <img className="w-2 h-3" alt="" src={pointer} />
-        </div>
-        <div className="bg-white flex flex-col md:flex-row gap-14 p-1 text-lg mb-4">
+      <div className="roles-container mt-3 p-3">
+        <img
+          className={`w-3 ${activeRole === "Align" && "activePointerPosition1"} 
+                         ${activeRole === "Link" && "activePointerPosition2"} 
+                         ${
+                           activeRole === "Decentralize" &&
+                           "activePointerPosition3"
+                         }`}
+          alt=""
+          src={pointer}
+        />
+        <div className="bg-white flex flex-col cursor-pointer md:flex-row gap-14 p-1 text-lg mb-4">
           {["Align", "Link", "Decentralize"].map((role, index) => (
             <div
               key={role}
@@ -40,7 +47,6 @@ const Roles = () => {
               onClick={() => setActiveRole(role)}
             >
               <b>{role}</b>
-
               <div
                 className={`text-lg font-medium text-gray-500 ${
                   activeRole === role && "activeText"
