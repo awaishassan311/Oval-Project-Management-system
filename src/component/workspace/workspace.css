@@ -1,22 +1,22 @@
 .mt-3.p-3 {
-  /* position: relative; */
+  position: relative;
 }
 
-.w-3 {
+.w-2 {
   top: 15px;
   position: absolute;
   width: 20px; /* adjust this value to fit the SVG's actual width */
   left: 0; /* or adjust to fit */
 }
 
-.createPosition .w-3 {
+.createPosition .w-2 {
   top: 15px; /* this assumes that the SVG should be at the top for the "Create" action */
 }
 
-.organizePosition .w-3 {
+.organizePosition .w-2 {
   top: 120px; /* adjust this to position the SVG next to the "Organize" action */
 }
 
-.visualizePosition .w-3 {
+.visualizePosition .w-2 {
   top: 222px; /* adjust this to position the SVG next to the "Visualize" action */
 }

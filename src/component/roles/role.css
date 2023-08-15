@@ -1,19 +1,11 @@
-.mt-3.p-3 {
-  position: relative;
+/* .activePointerPosition1 {
+  transform: translateX(0%);
 }
 
-.w-3 {
-  top: 0px;
+.activePointerPosition2 {
+  transform: translateX(0%);
 }
 
-.activePointerPosition1 .w-3 {
-  left: 10px; /* adjust based on the position of "Align" */
-}
-
-.activePointerPosition2 .w-3 {
-  left: 360px; /* adjust based on the position of "Link" */
-}
-
-.activePointerPosition3 .w-3 {
-  left: 700px;
-}
+.activePointerPosition3 {
+  transform: translateX(100%);
+} */

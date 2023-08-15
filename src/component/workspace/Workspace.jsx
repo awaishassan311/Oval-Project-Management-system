@@ -30,7 +30,7 @@ const Workspace = () => {
     ),
   };
   return (
-    <div className="flex font-inter justify-center mt-12 flex-col items-center   gap-8">
+    <div className="flex font-inter justify-center mt-12 flex-col items-center  px-8  gap-8">
       <div className="flex p-10 flex-col justify-center items-center gap-1">
         <div className="text-black font-inter text-4xl flex justify-center items-center font-bold leading-normal">
           <p>Tools erect walls</p>
@@ -59,7 +59,7 @@ const Workspace = () => {
                 selectedAction === "Visualize" && "visualizePosition"
               }`}
             >
-              <img className="w-3" color="orange-500" alt="" src={pointer} />
+              <img className="w-2" color="orange-500" alt="" src={pointer} />
             </div>
             <div className="flex flex-col cursor-pointer p-2 mt-3 gap-3">
               {["Create", "Organize", "Visualize"].map((action) => (
