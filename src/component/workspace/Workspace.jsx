@@ -82,7 +82,7 @@ const Workspace = () => {
         </div>
         <div className="flex justify-center items-center w-[50%]  rounded-md bg-[#F5F6F9]">
           <img
-            className="w-full h-full"
+            className="w-full h-[100%]"
             src={getBadgeSrc()}
             alt="Your Company"
           />

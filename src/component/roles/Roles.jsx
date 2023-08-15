@@ -7,44 +7,57 @@ import "./role.css";
 
 const Roles = () => {
   const [activeRole, setActiveRole] = useState("Align");
+  const [pointerLeft, setPointerLeft] = useState("0px");
+  const [pointerTop, setPointerTop] = useState("0px");
 
-  // Create references for each role
+  // Adjustments for pointer position
+  const LEFT_ADJUSTMENTS = {
+    Align: "-6px",
+    Link: "-6px",
+    Decentralize: "-6px",
+  };
+
+  const TOP_ADJUSTMENTS = {
+    Align: "3px",
+    Link: "-8px",
+    Decentralize: "-8px",
+  };
+
   const roleRefs = {
     Align: useRef(null),
     Link: useRef(null),
     Decentralize: useRef(null),
   };
 
-  const [pointerLeft, setPointerLeft] = useState("0px");
+  // Inside your handleRoleClick function
 
   const handleRoleClick = (role) => {
-    if (role === "Align") {
-      setPointerLeft("0px");
-      setActiveRole(role);
-      return;
-    }
-    if (role === "Link") {
-      setPointerLeft("345px");
-      setActiveRole(role);
-      return;
-    }
-    if (role === "Decentralize") {
-      setPointerLeft("688px");
-      setActiveRole(role);
-      return;
-    }
     const roleEl = roleRefs[role].current;
-    const roleCenter = roleEl.offsetLeft + roleEl.offsetWidth / 2;
-    const pointerCenter = 10; // Assuming the pointer width is 20px
-    setPointerLeft(`${roleCenter - pointerCenter}px`);
+    if (window.innerWidth > 768) {
+      // Desktop
+      setPointerLeft(
+        `${roleEl.offsetLeft + parseInt(LEFT_ADJUSTMENTS[role], 10)}px`
+      );
+    } else if (window.innerWidth <= 768 && window.innerWidth > 576) {
+      // Tablet
+      setPointerTop(
+        `${roleEl.offsetTop + parseInt(TOP_ADJUSTMENTS[role], 10)}px`
+      );
+      setPointerLeft("0"); // or any adjustment you want for tablet
+    } else {
+      // Mobile
+      setPointerTop(
+        `${roleEl.offsetTop + parseInt(TOP_ADJUSTMENTS[role], 10)}px`
+      );
+      setPointerLeft("0"); // or any adjustment you want for mobile
+    }
     setActiveRole(role);
   };
 
-  // Image mapping based on clicked role
   const roleImages = {
     Align: badge1,
-    Link: badge3,
-    Decentralize: badge2,
+    Link: badge2,
+    Decentralize: badge3,
   };
 
   return (
@@ -63,8 +76,8 @@ const Roles = () => {
       <div className="roles-container mt-3 p-3 relative">
         {/* Pointer Image */}
         <img
-          style={{ left: pointerLeft }}
-          className="w-3 h-3 transition-all ease-in-out duration-300 absolute top-30 z-10"
+          style={{ left: pointerLeft, top: pointerTop }}
+          className="roles-pointer"
           alt=""
           src={pointer}
         />

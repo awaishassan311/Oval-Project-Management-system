@@ -8,25 +8,25 @@ export default function Price() {
       title: "Starter",
       peopleLimit: "Up to 20 people",
       price: "$199",
-      billingCycle: "Per month, billed annually in USD",
+      billingCycle: " Annually billed in USD",
     },
     {
       title: "Starter",
       peopleLimit: "Up to 20 people",
       price: "$399",
-      billingCycle: "Per month, billed annually in USD",
+      billingCycle: " Annually billed in USD",
     },
     {
       title: "Starter",
       peopleLimit: "Up to 20 people",
       price: "$499",
-      billingCycle: "Per month, billed annually in USD",
+      billingCycle: " Annually billed in USD",
     },
     {
       title: "Starter",
       peopleLimit: "Up to 20 people",
       price: "$599",
-      billingCycle: "Per month, billed annually in USD",
+      billingCycle: " Annually billed in USD",
     },
     // Add more annual plans as required
   ];
@@ -36,25 +36,25 @@ export default function Price() {
       title: "Starter",
       peopleLimit: "Up to 20 people",
       price: "$299",
-      billingCycle: "Per month, billed monthly in USD",
+      billingCycle: "Per Month billed  in USD",
     },
     {
       title: "Starter",
       peopleLimit: "Up to 20 people",
       price: "$299",
-      billingCycle: "Per month, billed monthly in USD",
+      billingCycle: "Per Month billed  in USD",
     },
     {
       title: "Starter",
       peopleLimit: "Up to 20 people",
       price: "$299",
-      billingCycle: "Per month, billed monthly in USD",
+      billingCycle: "Per Month billed  in USD",
     },
     {
       title: "Starter",
       peopleLimit: "Up to 20 people",
       price: "$299",
-      billingCycle: "Per month, billed monthly in USD",
+      billingCycle: "Per Month billed  in USD",
     },
   ];
 
@@ -62,13 +62,16 @@ export default function Price() {
 
   return (
     <div className="flex flex-col font-inter px-4 items-center mt-12">
-      <div className="bg-white text-[4.06rem] flex flex-col items-center gap-[3.13rem] md:flex-col">
+      <div className="bg-white  flex flex-col items-center gap-[3.13rem] md:flex-col">
         <div className="flex flex-col items-center font-inter gap-[1.25rem]">
-          <div>Oval Plans and Pricing</div>
-          <div className="text-[1.25rem] font-inter text-gray-500">
+          <div className="xl:text-6xl  md:text-3xl sm:text-2xl">
+            Oval Plans and Pricing
+          </div>
+          <div className="text-[1.25rem] md:text-base sm:text-sm font-inter text-gray-500">
             30-day free trial, cancel any time, No credit card required
           </div>
         </div>
+
         <div className="flex items-center gap-[1.25rem] ">
           <div className="flex flex-col items-center gap-[0.63rem]">
             <div className="text-gray-500 font-inter text-[1.25rem] ">
@@ -91,11 +94,11 @@ export default function Price() {
         </div>
       </div>
 
-      <div className="border rounded mt-10 font-inter w-[75%] md:w-[75%] flex flex-col md:flex-row">
+      <div className="border rounded mt-10 font-inter w-full md:w-[80%] lg:w-[75%] flex flex-wrap">
         {currentPlans.map((plan, index) => (
           <div
             key={index}
-            className="border-r flex flex-col items-center py-9 w-full md:w-[25%]"
+            className="border-b md:border-r lg:border-b-0 flex flex-col items-center py-9 w-full md:w-1/2 lg:w-1/4 bg-white shadow-sm md:shadow-none hover:shadow-md transition-shadow duration-300"
           >
             <div className="pb-8 flex items-center flex-col gap-3">
               <p className="text-2xl font-inter font-semibold">{plan.title}</p>
@@ -110,7 +113,7 @@ export default function Price() {
                 Contact us for a Quote
               </p>
             </div>
-            <button className="mt-10 text-[18px] font-inter  bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 border border-orange-500 rounded">
+            <button className="mt-10 text-[18px] font-inter bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 border border-orange-500 rounded">
               Buy Now
             </button>
           </div>
