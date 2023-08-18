@@ -75,7 +75,6 @@ const Header = () => {
       >
         <div className="flex flex-row items-center justify-center gap-10 ">
           <div className="relative mt-0">
-            {/* Custom Close Button */}
             <button
               onClick={() => setOpen(false)}
               className="absolute top-0 left-0"

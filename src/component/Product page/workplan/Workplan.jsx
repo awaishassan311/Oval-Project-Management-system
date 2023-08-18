@@ -14,11 +14,18 @@ const Workplan = () => {
         </p>
       </div>
 
-      <div className="flex justify-center flex-col w-full items-center mt-8">
-        <img className=" w-[75%]" src={badge} alt="Your Company"></img>
+      <div className=" mt-14 px-4">
+        <div className="flex justify-center flex-col items-center  ">
+          <div className="flex justify-center w-full">
+            <img
+              className="h-[180px] lg:h-[800px]"
+              src={badge}
+              alt="Your Company"
+            ></img>
+          </div>
+        </div>
       </div>
-
-      <div className=" flex flex-row justify-center items-center gap-10 ">
+      <div className=" flex flex-col lg:flex-row justify-center items-center gap-10 ">
         <div className="flex flex-col w-[50%] justify-center items-start">
           <div className="flex justify-center flex-col w-full items-center">
             <img

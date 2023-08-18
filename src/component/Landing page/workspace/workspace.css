@@ -5,18 +5,43 @@
 .w-2 {
   top: 15px;
   position: absolute;
-  width: 20px; /* adjust this value to fit the SVG's actual width */
-  left: 0; /* or adjust to fit */
+  width: 20px;
+  left: 10px;
 }
 
 .createPosition .w-2 {
-  top: 15px; /* this assumes that the SVG should be at the top for the "Create" action */
+  top: 15px;
 }
 
 .organizePosition .w-2 {
-  top: 120px; /* adjust this to position the SVG next to the "Organize" action */
+  top: 120px;
 }
 
 .visualizePosition .w-2 {
-  top: 222px; /* adjust this to position the SVG next to the "Visualize" action */
+  top: 226px;
+}
+
+@media (max-width: 1023px) {
+  .mt-3.p-3 {
+    position: relative;
+  }
+
+  .w-2 {
+    top: 50px;
+    position: absolute;
+    width: 20px;
+    left: -8px;
+  }
+
+  .createPosition .w-2 {
+    top: 52px;
+  }
+
+  .organizePosition .w-2 {
+    top: 186px;
+  }
+
+  .visualizePosition .w-2 {
+    top: 319px;
+  }
 }

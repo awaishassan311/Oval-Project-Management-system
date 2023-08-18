@@ -3,18 +3,32 @@ import React from "react";
 const Successplan = () => {
   return (
     <div className="flex justify-center items-center mt-14 flex-col">
-      <div className=" flex justify-center items-center">
-        <div className=" flex flex-row text-black text-center font-rubik font-medium text-[36px] md:text-[32px]">
-          <p>A Plan to success at scale </p>
-          <p className="text-black font-rubik font-medium text-opacity-50 md:text-opacity-60 text-center md:text-[20px]">
-            Oval can help your team collaborate easily.
-            <br /> So you will have more control and more
-            <br />
-            support to run your company to work with your team.
+      <div className=" flex flex-col   justify-center items-start gap-7">
+        {/* <div className=" flex justify-center item-center flex-row">
+          <div className=" text-black text-center w-[50%] font-rubik font-medium text-[36px] md:text-[32px]">
+            <p> A Plan to success at scale </p>
+          </div>
+          <div className="text-black w-[50%] font-rubik font-medium text-opacity-50 md:text-opacity-60 text-center md:text-[20px]">
+            <p>
+              Oval can help your team collaborate easily. So you will have more
+              control and more support to run your company to work with your
+              team.
+            </p>
+          </div>
+        </div> */}
+        <div className="flex justify-center items-center">
+          <p className="text-xl lg:text-4xl  font-rubik font-bold ">
+            A Plan to success at scale
+          </p>
+        </div>
+        <div className="flex justify-center items-center  ">
+          <p className="text-[10px] lg:text-2xl font-inter text-opacity-50 font-normal ">
+            Your own customer success manager to help <br />
+            onboard large team and create custom workflows.
           </p>
         </div>
       </div>
-      <div className="flex justify-center items-center flex-row mt-10">
+      <div className="flex justify-center items-center flex-col lg:flex-row mt-10">
         <div className="flex justify-center items-center flex-col gap-10">
           <div className="flex flex-col w-[50%] justify-center items-start gap-5">
             <div className="flex justify-center flex-col w-full items-start">
@@ -221,9 +235,9 @@ const Successplan = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-center items-center mt-14">
-        <div className="flex justify-center items-start flex-row gap-[30%]">
-          <div className="flex flex-col w-[30%] justify-cente gap-5">
+      <div className="flex justify-center items-center mt-14">
+        <div className="flex justify-center  sm:gap-[5%]  md:gap-[20%] lg:gap-[40%]">
+          <div className="flex flex-col  justify-cente gap-5">
             <div className="flex flex-col items-center gap-2 px-8">
               <p className="text-5xl font-rubik font-bold ">98%</p>
               <p className="text-[12px] font-inter text-opacity-50 font-normal ">
@@ -231,7 +245,7 @@ const Successplan = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col w-[30%] justify-center items-center gap-5">
+          <div className="flex flex-col  justify-center items-center gap-5">
             <div className="flex flex-col items-center gap-2 px-8">
               <p className="text-5xl font-rubik font-bold ">98%</p>
               <p className="text-[12px] font-inter text-opacity-50 font-normal ">
@@ -239,7 +253,7 @@ const Successplan = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col w-[30%] justify-center  gap-5">
+          <div className="flex flex-col  justify-center  gap-5">
             <div className="flex flex-col items-center gap-2 px-8">
               <p className="text-5xl font-rubik font-bold ">98%</p>
               <p className="text-[12px] font-inter text-opacity-50 font-normal ">

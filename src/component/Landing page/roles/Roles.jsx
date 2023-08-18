@@ -108,8 +108,17 @@ const Roles = () => {
           ))}
         </div>
       </div>
-
-      <img className="w-[60%] mt-10" alt="" src={roleImages[activeRole]} />
+      <div className=" mt-14 px-4">
+        <div className="flex justify-center flex-col items-center  ">
+          <div className="flex justify-center w-full">
+            <img
+              className="h-[180px] lg:h-[800px]"
+              src={roleImages[activeRole]}
+              alt="Your Company"
+            ></img>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

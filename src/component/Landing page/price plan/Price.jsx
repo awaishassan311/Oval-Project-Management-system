@@ -11,49 +11,48 @@ export default function Price() {
       billingCycle: " Annually billed in USD",
     },
     {
-      title: "Starter",
+      title: "Growth",
       peopleLimit: "Up to 20 people",
       price: "$399",
       billingCycle: " Annually billed in USD",
     },
     {
-      title: "Starter",
+      title: "Midsize",
       peopleLimit: "Up to 20 people",
       price: "$499",
       billingCycle: " Annually billed in USD",
     },
     {
-      title: "Starter",
+      title: "Large",
       peopleLimit: "Up to 20 people",
       price: "$599",
       billingCycle: " Annually billed in USD",
     },
-    // Add more annual plans as required
   ];
 
   const monthlyPlans = [
     {
       title: "Starter",
       peopleLimit: "Up to 20 people",
-      price: "$299",
+      price: "$99",
       billingCycle: "Per Month billed  in USD",
     },
     {
-      title: "Starter",
+      title: "Growth",
+      peopleLimit: "Up to 20 people",
+      price: "$199",
+      billingCycle: "Per Month billed  in USD",
+    },
+    {
+      title: "Midsize",
       peopleLimit: "Up to 20 people",
       price: "$299",
       billingCycle: "Per Month billed  in USD",
     },
     {
-      title: "Starter",
+      title: "Large",
       peopleLimit: "Up to 20 people",
-      price: "$299",
-      billingCycle: "Per Month billed  in USD",
-    },
-    {
-      title: "Starter",
-      peopleLimit: "Up to 20 people",
-      price: "$299",
+      price: "$399",
       billingCycle: "Per Month billed  in USD",
     },
   ];
