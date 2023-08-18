@@ -1,6 +1,6 @@
 import React from "react";
-import profile from "../../../src/assets/profile.jpg";
-import icon from "../../../src/assets/group-16.svg";
+import profile from "../../../../src/assets/profile.jpg";
+import icon from "../../../../src/assets/group-16.svg";
 const Reviews = () => {
   const ReviewCard = ({ imgSrc, name, role, children }) => (
     <div className="flex flex-col gap-2">

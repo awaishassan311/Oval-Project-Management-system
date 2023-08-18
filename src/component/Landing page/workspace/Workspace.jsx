@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import badge1 from "../../assets/workspace1.svg";
-import badge2 from "../../assets/workspace2.svg";
-import badge3 from "../../assets/workspace3.svg";
-import pointer from "../../../src/assets/vector-1.svg";
+import badge1 from "../../../assets/workspace1.svg";
+import badge2 from "../../../assets/workspace2.svg";
+import badge3 from "../../../assets/workspace3.svg";
+import pointer from "../../../assets/vector-1.svg";
 import "./workspace.css";
 const Workspace = () => {
   const [selectedAction, setSelectedAction] = useState(null);

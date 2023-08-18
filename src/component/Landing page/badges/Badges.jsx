@@ -1,5 +1,5 @@
 import React from "react";
-import badge from "../../assets/hero.svg";
+import badge from "../../../assets/hero.svg";
 const Badges = () => {
   return (
     <div className=" mt-10 px-4">

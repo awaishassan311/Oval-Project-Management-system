@@ -1,28 +1,22 @@
-import Badges from "./component/badges/Badges";
 import Header from "./component/header/Header";
-import Herosection from "./component/hero-section/Herosection";
-import Reviews from "./component/reviews/Reviews";
-import Workspace from "./component/workspace/Workspace";
-import Roles from "./component/roles/Roles";
-import Achievement from "./component/achievements/Achievement";
+
 import Footer from "./component/footer/Footer";
-import Price from "./component/price plan/Price";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import "typeface-inter";
+import Landing from "./Pages/Landing";
+import Product from "./Pages/Product";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <Herosection />
-      <Badges />
-      <Workspace />
-      <Roles />
-      <Workspace />
-      <Reviews />
-      <Achievement />
-      <Price />
+      <Routes>
+        <Route path="/" element={<Landing />}></Route>
+        <Route path="/Product" element={<Product />}></Route>
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

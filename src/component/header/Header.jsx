@@ -1,75 +1,105 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MenuIcon } from "@heroicons/react/outline";
+import { XIcon } from "@heroicons/react/outline";
+
 import Logo from "../../../src/assets/Logo.svg";
 import { Drawer } from "antd";
+import "../../style/drawer.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [placement, setPlacement] = useState("right");
 
-  const showDrawer = () => {
-    setOpen(true);
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
-  const onClose = () => {
-    setOpen(false);
-  };
+    window.addEventListener("resize", handleResize);
 
-  const onChange = (e) => {
-    setPlacement(e.target.value);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const getDrawerWidth = () => {
+    if (windowWidth <= 640) {
+      // <= 640px for mobile devices
+      return "50%";
+    } else if (windowWidth <= 1024) {
+      // 641px - 1024px for tablet devices
+      return "50%";
+    } else {
+      // > 1024px for desktop
+      return "250px";
+    }
   };
 
   return (
-    <div className="flex justify-between  lg:flex lg:justify-center  sm:flex sm:justify-between  md:flex md:justify-between gap-10 font-inter px-8 items-center py-6  ">
+    <div className="flex justify-between lg:justify-center sm:justify-between md:justify-between gap-10 font-inter px-8 items-center py-6">
       <div className="mr-[50px]">
         <img className="h-20" src={Logo} alt="logo" />
       </div>
 
-      {/* Navigation links for desktop and tablet, but hidden for mobile */}
       <div className="hidden md:flex space-x-10">
-        <a href="#">About Us</a>
-        <a href="#">Product</a>
-        <a href="#">Pricing</a>
-        <a href="#">Contact</a>
-        <a href="#">Download</a>
+        <Link href="/about">About Us</Link>
+        <Link to="/Product">Product</Link>
+        <Link href="/pricing">Pricing</Link>
+        <Link href="/contact">Contact</Link>
+        <Link href="/download">Download</Link>
       </div>
 
-      {/* Login buttons for desktop and tablet */}
-      <div className="hidden md:flex items-center  ml-[50px] space-x-4">
+      <div className="hidden md:flex items-center ml-[50px] space-x-4">
         <button className="px-4">Login</button>
         <button className="px-4 py-2 rounded-md border font-inter border-gray-600">
           Try for Free
         </button>
       </div>
 
-      {/* Menu button shown for mobile and hidden for tablet/desktop */}
       <div className="md:hidden">
-        <button onClick={showDrawer}>
+        <button onClick={() => setOpen(true)}>
           <MenuIcon className="h-6 w-6" />
         </button>
       </div>
 
       <Drawer
-        title="Basic Drawer"
+        itle="Basic Drawer"
         placement={placement}
-        closable={false}
-        onClose={onClose}
+        closable={false} // keep this as false since we're adding a custom close button
+        onClose={() => setOpen(false)}
         visible={open}
-        key={placement}
-        width="700px"
+        width={getDrawerWidth()}
+        bodyStyle={{ padding: "20px" }}
       >
-        <div>
-          <nav className="space-x-10 flex flex-col justify-center items-center font-inter">
-            <a href="#">About Us</a>
-            <a href="#">Product</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
-            <a href="#">Download</a>
-          </nav>
+        <div className="flex flex-row items-center justify-center gap-10 ">
+          <div className="relative mt-0">
+            {/* Custom Close Button */}
+            <button
+              onClick={() => setOpen(false)}
+              className="absolute top-0 left-0"
+            >
+              <XIcon className="h-6 w-6" />
+            </button>
+
+            <nav className=" flex justify-center items-center mt-10 font-inter">
+              <div className="flex items-center cursor-pointer   flex-col justify-center gap-5 ">
+                <Link href="#">About Us</Link>
+                <Link href="/Product">Product</Link>
+                <Link href="#">Pricing</Link>
+                <Link href="#">Contact</Link>
+                <Link href="#">Download</Link>
+                <button className="px-4 hover:bg-gray-100 ">Login</button>
+                <button className="px-2 py-1 rounded-md border hover:bg-gray-100 font-inter border-gray-600">
+                  Try for Free
+                </button>
+              </div>
+            </nav>
+          </div>
         </div>
       </Drawer>
     </div>
   );
 };
-
 export default Header;

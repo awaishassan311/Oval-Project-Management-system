@@ -4,14 +4,14 @@ const Footer = () => {
   return (
     <footer className="bg-black  text-white mt-10">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="lg:flex lg:items-start lg:gap-8">
+        <div className="lg:flex lg:items-center lg:gap-8">
           {/* <div className="w-[6.25rem] h-[6.25rem] object-cover">
             <img className="w-full" src={FooterLogo} alt="Your Company" />
 
           </div> */}
 
           <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
-            <div className="col-span-2">
+            <div className="col-span-1">
               <div
                 className="w-[6.25rem] h-[6.25rem] object-cover"
                 style={{
@@ -27,12 +27,11 @@ const Footer = () => {
                 </h2>
 
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
-                  non cupiditate quae nam molestias.
+                  @2023 School Facility Pro
                 </p>
               </div>
             </div>
-
+            {/* 
             <div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
               <form className="w-full">
                 <label form="UserEmail" className="sr-only">
@@ -53,7 +52,7 @@ const Footer = () => {
                   </button>
                 </div>
               </form>
-            </div>
+            </div> */}
 
             <div className="col-span-2 sm:col-span-1">
               <p className="font-medium text-white dark:text-white">Services</p>
@@ -216,7 +215,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="col-span-2 sm:col-span-1">
+            {/* <div className="col-span-2 sm:col-span-1">
               <p className="font-medium text-white dark:text-white">
                 Downloads
               </p>
@@ -240,7 +239,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <ul className="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
               <li>
