@@ -38,12 +38,12 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between lg:justify-center sm:justify-between md:justify-between gap-10 font-inter px-8 items-center py-6">
-      <div className="mr-[50px]">
+    <div className="flex justify-between lg:justify-center sm:justify-between md:justify-between gap-10 font-inter px-4 items-center py-6">
+      <div className="px-4">
         <img className="h-20" src={Logo} alt="logo" />
       </div>
 
-      <div className="hidden md:flex space-x-10">
+      <div className="hidden lg:flex gap-6 space-x-10">
         <Link href="/about">About Us</Link>
         <Link to="/Product">Product</Link>
         <Link href="/pricing">Pricing</Link>
@@ -51,7 +51,7 @@ const Header = () => {
         <Link href="/download">Download</Link>
       </div>
 
-      <div className="hidden md:flex items-center ml-[50px] space-x-4">
+      <div className="hidden md:flex items-center  space-x-4">
         <button className="px-4">Login</button>
         <button className="px-4 py-2 rounded-md border font-inter border-gray-600">
           Try for Free

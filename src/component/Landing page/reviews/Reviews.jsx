@@ -6,7 +6,11 @@ const Reviews = () => {
     <div className="flex flex-col gap-2">
       <div className="font-medium">{children}</div>
       <div className="flex items-center gap-2 text-[1rem]">
-        <img className="w-[2.5rem] rounded h-[2.5rem]" alt="" src={imgSrc} />
+        <img
+          className="rounded-[50%] w-[4.38rem] h-[4.38rem] object-cover"
+          alt=""
+          src={imgSrc}
+        />
         <div>
           <div className="font-medium">{name}</div>
           <div className="text-gray-500">{role}</div>
@@ -19,7 +23,7 @@ const Reviews = () => {
     <div className="flex justify-center px-4 mt-12">
       <div className="bg-white flex flex-col font-inter justify-center gap-2 text-[2.06rem]">
         <div className="flex item-center justify-center">
-          <div className="flex text-4xl text-bold font-inter gap-[2.5rem]">
+          <div className="flex text-bold font-inter gap-[2.5rem]  lg:text-4xl  text-xl md:text-2xl">
             <img className="w-[5.56rem]" alt="" src={icon} />
             <div>
               <p className="m-0">Loved by so many people</p>
@@ -27,7 +31,7 @@ const Reviews = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row  justify-center items-center mt-10 gap-14 text-[1.25rem] text-black-70">
+        <div className="flex flex-col lg:flex-row  justify-center items-center mt-10 gap-14 lg:text-2xl  text-[12px] md:text-xl text-black-70">
           <ReviewCard
             imgSrc={profile}
             name="Jafar Andishmand"

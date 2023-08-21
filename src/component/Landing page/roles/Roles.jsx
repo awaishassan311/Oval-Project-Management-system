@@ -63,12 +63,12 @@ const Roles = () => {
   return (
     <div className="flex justify-center items-center mt-10 px-4 flex-col">
       <div className="text-center text-gray-500 mb-4">
-        <div className="text-4xl text-black font-inter font-bold leading-normal">
+        <div className="text-black font-inter font-bold leading-normal lg:text-4xl  text-xl md:text-2xl">
           Bring all the roles together.
         </div>
       </div>
 
-      <div className="mb-4 flex flex-col text-center">
+      <div className="mb-4 flex flex-col text-center lg:text-2xl  text-[12px] md:text-xl">
         <p className="m-0">We believe in autonomous teams that own their</p>
         <p className="m-0">work and their piece of workspace.</p>
       </div>

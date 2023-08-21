@@ -3,9 +3,15 @@ import badge from "../../../assets/hero.svg";
 const Hero = () => {
   return (
     <div className="flex justify-center flex-col item-center px-4 mt-10 mb-10">
-      <div className="w-full text-black text-center font-rubik font-medium text-[36px] md:text-[32px]">
-        <p>Make your project & tasks</p> <p> well planned</p>
-        <p className="text-black mt-10 font-rubik font-medium text-opacity-50 md:text-opacity-60 text-center md:text-[20px]">
+      <div className="w-full text-black text-center font-rubik font-medium">
+        <p className="lg:text-[36px] text[14px] md:text-[25px]">
+          Make your project & tasks
+        </p>{" "}
+        <p className="lg:text-[36px] text[14px] md:text-[25px]">
+          {" "}
+          well planned
+        </p>
+        <p className="text-black mt-10 font-rubik font-medium text-opacity-50 md:text-opacity-60 text-center lg:text-[32px]  text-[12px] md:text-[20px]">
           Plan, track, and do all your work in one place.
           <br />
           Steer the ship together with your team.

@@ -4,11 +4,11 @@ import badge2 from "../../../assets/workspace1.svg";
 const Workplan = () => {
   return (
     <div className="flex justify-center items-center flex-col mt-14">
-      <div className="w-full text-black text-center font-rubik font-medium text-[36px] md:text-[32px]">
+      <div className="w-full text-black text-center font-rubik font-medium lg:text-4xl gap-5 text-xl md:text-2xl">
         <p>Keep your work bundled </p>
 
-        <span className="bg-orange-300 p-2 border rounded">together.</span>
-        <p className="text-black mt-10 font-rubik font-medium text-opacity-50 md:text-opacity-60 text-center md:text-[20px]">
+        <span className="bg-orange-300 p-1 border rounded">together.</span>
+        <p className="text-black mt-10 font-rubik font-medium text-opacity-50 text-center lg:text-3xl  text-xl md:text-2xl">
           We belive in autonomous teams that own their <br />
           work and their piece of workspace.
         </p>

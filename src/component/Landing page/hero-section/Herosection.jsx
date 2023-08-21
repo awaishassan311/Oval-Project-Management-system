@@ -3,10 +3,10 @@ import React from "react";
 const Herosection = () => {
   return (
     <div className="flex justify-center px-4 mt-100">
-      <div className="w-full text-black text-center font-rubik font-medium text-[36px] md:text-[32px]">
+      <div className="w-full text-black text-center font-rubik font-medium lg:text-4xl  text-xl md:text-2xl">
         <p>Maintain, Map, and Master</p>
         Your Comprehensive Tool for{" "}
-        <span className="bg-orange-300 p-2 border rounded">
+        <span className="bg-orange-300 p-1 border rounded">
           School Facility
         </span>
         <p>Career.</p>

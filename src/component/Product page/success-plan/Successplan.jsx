@@ -67,9 +67,9 @@ const Successplan = () => {
                 <path
                   d="M45 23H50C51.3261 23 52.5978 23.5268 53.5355 24.4645C54.4732 25.4021 55 26.6739 55 28V55.5L45 45.5H30C28.6739 45.5 27.4021 44.9732 26.4645 44.0355C25.5268 43.0978 25 41.8261 25 40.5V38M35 23C35 24.3261 34.4732 25.5978 33.5355 26.5355C32.5978 27.4732 31.3261 28 30 28H15L5 38V10.5C5 7.75 7.25 5.5 10 5.5H30C31.3261 5.5 32.5978 6.02678 33.5355 6.96447C34.4732 7.90215 35 9.17392 35 10.5V23Z"
                   stroke="#B3B1B7"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
@@ -92,7 +92,7 @@ const Successplan = () => {
                 viewBox="0 0 60 61"
                 fill="none"
               >
-                <g clip-path="url(#clip0_1_899)">
+                <g clipPath="url(#clip0_1_899)">
                   <path
                     d="M56.0333 29.7167C50.4166 19.3333 40.5666 13.05 29.6666 13.05C18.7666 13.05 8.89997 19.3333 3.3333 29.7167L2.86664 30.5L3.29997 31.3C8.91664 41.6833 18.7666 47.9667 29.6666 47.9667C40.5666 47.9667 50.4333 41.7667 56.0333 31.3L56.4666 30.5L56.0333 29.7167ZM29.6666 44.55C20.2833 44.55 11.6666 39.3167 6.66664 30.5C11.6666 21.6833 20.2833 16.45 29.6666 16.45C39.05 16.45 47.5666 21.7 52.65 30.5C47.5666 39.3167 39.0333 44.55 29.6666 44.55Z"
                     fill="#B3B1B7"
@@ -135,7 +135,7 @@ const Successplan = () => {
                 viewBox="0 0 60 60"
                 fill="none"
               >
-                <g clip-path="url(#clip0_1_908)">
+                <g clipPath="url(#clip0_1_908)">
                   <path
                     d="M46.875 22.5647L20.1 22.5647L19.1297 18.2128C17.475 12.0384 20.3494 5.88281 26.9278 4.12031C33.4397 2.37563 39.1791 6.10875 40.8628 12.3891L41.6597 15.5512C41.9278 16.5516 42.9553 17.1449 43.9566 16.8768C44.9569 16.6087 45.5503 15.5812 45.2822 14.5809L44.4844 11.4187C42.2588 3.10775 34.5009 -1.79068 25.9575 0.497754C17.3813 2.79551 13.3181 11.0109 15.5081 19.184L16.2619 22.5646H13.125C8.98875 22.5646 5.625 25.9284 5.625 30.0646V52.5646C5.625 56.7009 8.98875 60.0646 13.125 60.0646H46.875C51.0112 60.0646 54.375 56.7009 54.375 52.5646V30.0646C54.375 25.9284 51.0112 22.5646 46.875 22.5646V22.5647ZM50.625 52.5647C50.625 54.6319 48.9422 56.3147 46.875 56.3147H13.125C11.0578 56.3147 9.375 54.6319 9.375 52.5647V30.0647C9.375 27.9975 11.0578 26.3147 13.125 26.3147H46.875C48.9422 26.3147 50.625 27.9975 50.625 30.0647V52.5647ZM30 33.8147C27.9291 33.8147 26.25 35.4938 26.25 37.5647C26.25 38.9494 27.0094 40.1447 28.125 40.7944V46.9397C28.125 47.9747 28.965 48.8147 30 48.8147C31.035 48.8147 31.875 47.9747 31.875 46.9397V40.7944C32.9906 40.1447 33.75 38.9484 33.75 37.5647C33.75 35.4938 32.0709 33.8147 30 33.8147Z"
                     fill="#B3B1B7"
@@ -167,7 +167,7 @@ const Successplan = () => {
                 viewBox="0 0 60 60"
                 fill="none"
               >
-                <g clip-path="url(#clip0_1_914)">
+                <g clipPath="url(#clip0_1_914)">
                   <path
                     d="M2.14285 30C2.14285 35.5096 3.77665 40.8955 6.83763 45.4766C9.89861 50.0577 14.2493 53.6282 19.3395 55.7367C24.4298 57.8451 30.0309 58.3968 35.4347 57.3219C40.8384 56.247 45.8021 53.5939 49.698 49.698C53.5939 45.8021 56.247 40.8384 57.3219 35.4347C58.3967 30.0309 57.8451 24.4298 55.7366 19.3395C53.6282 14.2493 50.0577 9.89863 45.4766 6.83765C40.8955 3.77666 35.5096 2.14287 30 2.14287C22.0199 2.13404 14.344 5.20438 8.57142 10.7143"
                     fill="white"
@@ -175,9 +175,9 @@ const Successplan = () => {
                   <path
                     d="M2.14285 30C2.14285 35.5096 3.77665 40.8955 6.83763 45.4766C9.89861 50.0577 14.2493 53.6282 19.3395 55.7367C24.4298 57.8451 30.0309 58.3968 35.4347 57.3219C40.8384 56.247 45.8021 53.5939 49.698 49.698C53.5939 45.8021 56.247 40.8384 57.3219 35.4347C58.3967 30.0309 57.8451 24.4298 55.7366 19.3395C53.6282 14.2493 50.0577 9.89863 45.4766 6.83765C40.8955 3.77666 35.5096 2.14287 30 2.14287C22.0199 2.13404 14.344 5.20438 8.57142 10.7143"
                     stroke="#B3B1B7"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M10.7143 2.14285L8.57143 10.7143L17.1429 12.8571M30 15V32.1429L18.8571 37.7143"
@@ -186,9 +186,9 @@ const Successplan = () => {
                   <path
                     d="M10.7143 2.14285L8.57143 10.7143L17.1429 12.8571M30 15V32.1429L18.8571 37.7143"
                     stroke="#B3B1B7"
-                    stroke-width="4"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </g>
                 <defs>
@@ -235,31 +235,29 @@ const Successplan = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-14">
-        <div className="flex justify-center  sm:gap-[5%]  md:gap-[20%] lg:gap-[40%]">
-          <div className="flex flex-col  justify-cente gap-5">
-            <div className="flex flex-col items-center gap-2 px-8">
-              <p className="text-5xl font-rubik font-bold ">98%</p>
-              <p className="text-[12px] font-inter text-opacity-50 font-normal ">
-                Of user saved time
-              </p>
-            </div>
+      <div className="flex justify-center flex-col lg:flex-row md:flex-row  gap-10 md:gap-[20%] lg:gap-[40%] mt-14">
+        <div className="flex flex-col  justify-cente gap-5">
+          <div className="flex flex-col items-center gap-2 px-8">
+            <p className="text-5xl font-rubik font-bold ">98%</p>
+            <p className="text-[12px] font-inter text-opacity-50 font-normal ">
+              Of user saved time
+            </p>
           </div>
-          <div className="flex flex-col  justify-center items-center gap-5">
-            <div className="flex flex-col items-center gap-2 px-8">
-              <p className="text-5xl font-rubik font-bold ">98%</p>
-              <p className="text-[12px] font-inter text-opacity-50 font-normal ">
-                Of user saved time
-              </p>
-            </div>
+        </div>
+        <div className="flex flex-col  justify-center items-center gap-5">
+          <div className="flex flex-col items-center gap-2 px-8">
+            <p className="text-5xl font-rubik font-bold ">98%</p>
+            <p className="text-[12px] font-inter text-opacity-50 font-normal ">
+              Of user saved time
+            </p>
           </div>
-          <div className="flex flex-col  justify-center  gap-5">
-            <div className="flex flex-col items-center gap-2 px-8">
-              <p className="text-5xl font-rubik font-bold ">98%</p>
-              <p className="text-[12px] font-inter text-opacity-50 font-normal ">
-                Of user saved time
-              </p>
-            </div>
+        </div>
+        <div className="flex flex-col  justify-center  gap-5">
+          <div className="flex flex-col items-center gap-2 px-8">
+            <p className="text-5xl font-rubik font-bold ">98%</p>
+            <p className="text-[12px] font-inter text-opacity-50 font-normal ">
+              Of user saved time
+            </p>
           </div>
         </div>
       </div>

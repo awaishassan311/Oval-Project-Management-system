@@ -35,12 +35,14 @@ const Workspace = () => {
   return (
     <div className="flex font-inter justify-center mt-12 flex-col items-center px-8 gap-8">
       <div className="flex p-10 flex-col justify-center items-center gap-1">
-        <div className="text-black font-inter text-4xl sm:text-4xl md:text-4xl flex justify-center items-center font-bold leading-normal">
+        <div className="text-black font-inter lg:text-4xl  text-xl md:text-2xl flex justify-center items-center font-bold leading-normal">
           <p>Tools erect walls</p>
         </div>
-        <div className="text-black text-opacity-50 text-center font-inter text-base font-normal leading-normal">
+        <div className="text-black text-opacity-50 text-center font-inter  font-normal leading-normal lg:text-2xl  text-[12px] md:text-xl">
           Collaboration is a struggle, when everybody uses a different app.
-          <p className="mb-0.5">We have the solution for that.</p>
+          <p className="mb-0.5 lg:text-2xl  text-[12px] md:text-xl">
+            We have the solution for that.
+          </p>
         </div>
       </div>
 
