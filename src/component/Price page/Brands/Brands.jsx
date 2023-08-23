@@ -43,14 +43,6 @@ const Brands = () => {
         <p>Leading brands trust Oval for Teamwork Software</p>
       </div>
       <div className="imgslider mt-5">
-        {/* <Slider ref={slider1} {...settingsFor} className="slider slider-for">
-        {images.map((image, index) => (
-          <div key={index}>
-            <img src={image} alt={`Brand ${index}`} />
-          </div>
-        ))}
-      </Slider> */}
-
         <Slider ref={slider2} {...settingsNav} className="slider slider-nav">
           {images.map((image, index) => (
             <div key={index}>
@@ -58,8 +50,6 @@ const Brands = () => {
             </div>
           ))}
         </Slider>
-
-        {/* The "go to slide" links were commented out in your code, so I've left them commented here. */}
       </div>
     </div>
   );
