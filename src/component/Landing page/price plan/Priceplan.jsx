@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Price() {
+export default function Priceplan() {
   const [isOn, setIsOn] = useState(false);
 
   const annualPlans = [
@@ -63,10 +63,10 @@ export default function Price() {
     <div className="flex flex-col font-inter px-4 items-center mt-12">
       <div className="bg-white  flex flex-col items-center gap-[3.13rem] md:flex-col">
         <div className="flex flex-col items-center font-inter gap-[1.25rem]">
-          <div className="xl:text-6xl  md:text-3xl sm:text-2xl">
+          <div className="lg:text-4xl  md:text-3xl text-bold text-xl">
             Oval Plans and Pricing
           </div>
-          <div className="text-[1.25rem] md:text-base sm:text-sm font-inter text-gray-500">
+          <div className="text[12px] lg:text-2xl md:text-xl font-inter text-gray-500">
             30-day free trial, cancel any time, No credit card required
           </div>
         </div>

@@ -1,0 +1,29 @@
+.action {
+  display: block;
+  margin: 100px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.action a {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.action a:hover {
+  background: #000;
+}
+
+.imgslider {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+.slick-dots li.slick-active button:before {
+  color: gray; /* Change this to your preferred color */
+}
+
+.slider-nav .slick-prev:before,
+.slider-nav .slick-next:before {
+  color: gray; /* Change to your preferred color */
+}

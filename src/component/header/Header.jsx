@@ -46,7 +46,7 @@ const Header = () => {
       <div className="hidden lg:flex gap-6 space-x-10">
         <Link href="/about">About Us</Link>
         <Link to="/Product">Product</Link>
-        <Link href="/pricing">Pricing</Link>
+        <Link to="/price">Pricing</Link>
         <Link href="/contact">Contact</Link>
         <Link href="/download">Download</Link>
       </div>
@@ -85,8 +85,8 @@ const Header = () => {
             <nav className=" flex justify-center items-center mt-10 font-inter">
               <div className="flex items-center cursor-pointer   flex-col justify-center gap-5 ">
                 <Link href="#">About Us</Link>
-                <Link href="/Product">Product</Link>
-                <Link href="#">Pricing</Link>
+                <Link to="/Product">Product</Link>
+                <Link to="/Price">Pricing</Link>
                 <Link href="#">Contact</Link>
                 <Link href="#">Download</Link>
                 <button className="px-4 hover:bg-gray-100 ">Login</button>
