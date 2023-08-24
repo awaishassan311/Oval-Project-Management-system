@@ -163,7 +163,6 @@ const Contactus = () => {
                   Amount is required
                 </span>
               </div>
-
               <div className="relative z-0 w-full mb-5">
                 <input
                   type="text"
