@@ -3,7 +3,7 @@ import profile from "../../assets//profile.jpg";
 const Teams = () => {
   return (
     <div>
-      <div className="mt-14 ">
+      <div className="mt-14 px-5 ">
         <div className="flex flex-col justify-center  item center gap-10 md:gap-[30%] lg:gap-[40%] lg:flex-row md:flex-row ">
           <div className="flex justify-center item-center gap-5">
             <img
