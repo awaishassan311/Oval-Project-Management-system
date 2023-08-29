@@ -29,12 +29,12 @@ const Contactus = () => {
               <p>Call us</p>
               <p>(669) 984-9439</p>
             </button>
-            <button className="mt-10 text-[18px] md:text-[16px] font-inter bg-white hover:bg-orange-550 text-orange-600 font-bold py-1 px-4 border border-orange-500 rounded">
+            <button className="mt-10 text-[18px] md:text-[16px] font-inter bg-white hover:text-orange-700  text-orange-600 font-bold py-1 px-4 border border-orange-500 rounded">
               <p>Email us</p>
               <p>help@oval.com</p>
             </button>
           </div>
-          <div className="flex flex-col justify-center items-center mt-6 ">
+          <div className="flex flex-col justify-center items-center mt-10 ">
             <h1 className="text-xl text-bold">
               Leading brands trust Oval for Teamwork Software
             </h1>
@@ -69,14 +69,15 @@ const Contactus = () => {
                   First Name
                 </label>
                 <input
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  required
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                   id="grid-first-name"
                   type="text"
                   placeholder="Jane"
                 />
-                <p className="text-red-500 text-xs italic">
+                {/* <p className="text-red-500 text-xs italic">
                   Please fill out this field.
-                </p>
+                </p> */}
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
@@ -86,6 +87,7 @@ const Contactus = () => {
                   Last Name
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-last-name"
                   type="text"
@@ -102,13 +104,14 @@ const Contactus = () => {
                   E-mail
                 </label>
                 <input
+                  required
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="email"
                   type="email"
                 />
-                <p className="text-gray-600 text-xs italic">
+                {/* <p className="text-gray-600 text-xs italic">
                   Some tips - as long as needed
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="flex flex-wrap -mx-3 mb-6">
@@ -123,17 +126,17 @@ const Contactus = () => {
                   className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                   id="message"
                 ></textarea>
-                <p className="text-gray-600 text-xs italic">
+                {/* <p className="text-gray-600 text-xs italic">
                   Re-size can be disabled by set by resize-none / resize-y /
                   resize-x / resize
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="md:flex md:items-center">
               <div className="md:w-1/3">
                 <button
                   className="shadow bg-orange-400 hover:bg-orange-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                  type="button"
+                  type="submit"
                 >
                   Send
                 </button>

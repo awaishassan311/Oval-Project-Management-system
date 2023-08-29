@@ -40,7 +40,9 @@ const Header = () => {
   return (
     <div className="flex justify-between lg:justify-center sm:justify-between md:justify-between gap-10 font-inter px-4 items-center py-6">
       <div className="px-4">
-        <img className="h-20" src={Logo} alt="logo" />
+        <Link to="/">
+          <img className="h-20" src={Logo} alt="logo" />
+        </Link>
       </div>
 
       <div className="hidden lg:flex gap-6 space-x-10">

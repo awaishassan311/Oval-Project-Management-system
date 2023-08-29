@@ -30,11 +30,11 @@ const Topics = () => {
             <p>Sharing & Collaboration</p>
           </div>
           <div className="flex justify-center items-center py-3 px-3 border-r-4 rounded-2 border-4 my-10">
-            <img className="" src={menu} alt="Your Company" />
+            <img className="" src={gallery} alt="Your Company" />
             <p>Sharing & Collaboration</p>
           </div>
           <div className="flex justify-center items-center py-3 px-3 border-r-4 rounded-2 border-4">
-            <img className="" src={menu} alt="Your Company" />
+            <img className="" src={share} alt="Your Company" />
             <p>Sharing & Collaboration</p>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Topics = () => {
             <p>Sharing & Collaboration</p>
           </div>
           <div className="flex justify-center items-center py-3 px-3 border-r-4 rounded-2 border-4 my-10">
-            <img className="" src={menu} alt="Your Company" />
+            <img className="" src={chat} alt="Your Company" />
             <p>Sharing & Collaboration</p>
           </div>
           <div className="flex justify-center items-center py-3 px-3 border-r-4 rounded-2 border-4">
