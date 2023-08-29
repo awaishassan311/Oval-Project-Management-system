@@ -12,8 +12,8 @@ const Comparisonplan = () => {
         <div className="container w-[80%]">
           <div class="py-8">
             <div class="shadow overflow-hidden rounded border-b border-gray-200">
-              <table class="min-w-full bg-white">
-                <thead class="bg-[#F5F6F9;] text-black">
+              <table class="w-full bg-white lg:inline-table md:inline-table inline-block overflow-x-auto ">
+                <thead class="bg-[#F5F6F9;] text-black overflow-auto">
                   <tr>
                     <th class="text-left py-3 px-4 uppercase font-semibold text-sm">
                       Usage
@@ -189,7 +189,7 @@ const Comparisonplan = () => {
           </div>
           <div class="py-8 ">
             <div class="shadow overflow-hidden rounded border-b border-gray-200">
-              <table class="min-w-full bg-white">
+              <table class="w-full bg-white lg:inline-table md:inline-table inline-block overflow-x-auto">
                 <thead class="bg-[#F5F6F9;] text-black">
                   <tr>
                     <th class="text-left py-3 px-4 uppercase font-semibold text-sm">
@@ -327,7 +327,7 @@ const Comparisonplan = () => {
           </div>
           <div class="py-8 ">
             <div class="shadow overflow-hidden rounded border-b border-gray-200">
-              <table class="min-w-full bg-white">
+              <table class="w-full bg-white lg:inline-table md:inline-table inline-block overflow-x-auto">
                 <thead class="bg-[#F5F6F9;] text-black">
                   <tr>
                     <th class="text-left py-3 px-4 uppercase font-semibold text-sm">
@@ -573,7 +573,7 @@ const Comparisonplan = () => {
           </div>
           <div class="py-8 ">
             <div class="shadow overflow-hidden rounded border-b border-gray-200">
-              <table class="min-w-full bg-white">
+              <table class="w-full bg-white lg:inline-table md:inline-table inline-block overflow-x-auto">
                 <thead class="bg-[#F5F6F9;] text-black">
                   <tr>
                     <th class="text-left py-3 px-4 uppercase font-semibold text-sm">
@@ -849,7 +849,7 @@ const Comparisonplan = () => {
           </div>
           <div class=" py-8 w-full">
             <div class="shadow overflow-hidden rounded border-b border-gray-200">
-              <table class="min-w-full bg-white">
+              <table class="w-full bg-white lg:inline-table md:inline-table inline-block overflow-x-auto">
                 <thead class="bg-[#F5F6F9;] text-black">
                   <tr>
                     <th class="text-left py-3 px-4 uppercase font-semibold text-sm">
@@ -1125,7 +1125,7 @@ const Comparisonplan = () => {
           </div>
           <div class=" py-8">
             <div class="shadow overflow-hidden rounded border-b border-gray-200">
-              <table class="min-w-full bg-white">
+              <table class="w-full bg-white lg:inline-table md:inline-table inline-block overflow-x-auto">
                 <thead class="bg-[#F5F6F9;] text-black">
                   <tr>
                     <th class="text-left py-3 px-4 uppercase font-semibold text-sm">
