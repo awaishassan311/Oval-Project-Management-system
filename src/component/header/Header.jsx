@@ -89,7 +89,7 @@ const Header = () => {
                 <Link href="#">About Us</Link>
                 <Link to="/Product">Product</Link>
                 <Link to="/Price">Pricing</Link>
-                <Link href="#">Contact</Link>
+                <Link to="/Contact">Contact</Link>
                 <Link href="#">Download</Link>
                 <button className="px-4 hover:bg-gray-100 ">Login</button>
                 <button className="px-2 py-1 rounded-md border hover:bg-gray-100 font-inter border-gray-600">
