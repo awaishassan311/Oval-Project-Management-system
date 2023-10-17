@@ -1,4 +1,3 @@
-import React from "react";
 import menu from "../../../assets/Topic-assests/topicmenu.svg";
 import gallery from "../../../assets/Topic-assests/topicgallary.svg";
 import share from "../../../assets/Topic-assests/topicshare.svg";

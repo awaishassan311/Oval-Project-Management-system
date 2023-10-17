@@ -1,4 +1,3 @@
-import React from "react";
 import profile from "../../../../src/assets/profile.jpg";
 import icon from "../../../../src/assets/group-16.svg";
 const Reviews = () => {
@@ -26,8 +25,8 @@ const Reviews = () => {
           <div className="flex text-bold font-inter gap-[2.5rem]  lg:text-4xl  text-xl md:text-2xl">
             <img className="w-[5.56rem]" alt="" src={icon} />
             <div>
-              <p className="m-0">Loved by so many people</p>
-              <p className="m-0">around the world.</p>
+              <p className="m-0">What makes School Facility Pro</p>
+              <p className="m-0">a valuable tool for school management?</p>
             </div>
           </div>
         </div>
