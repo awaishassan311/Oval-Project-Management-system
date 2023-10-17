@@ -23,11 +23,11 @@ const Footer = () => {
               ></div>
               <div>
                 <h2 className="text-2xl font-bold text-white dark:text-white">
-                  Get the latest news!
+                  Plansrow
                 </h2>
 
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                  @2023 School Facility Pro
+                  Your Partner in Planning & Design
                 </p>
               </div>
             </div>

@@ -10,11 +10,11 @@ const Workspace = () => {
 
   const getBadgeSrc = () => {
     switch (selectedAction) {
-      case "Create":
+      case "ADD District":
         return badge1;
-      case "Organize":
+      case "ADD Schools":
         return badge2;
-      case "Visualize":
+      case "ADD Buildings, Room, Site Systems":
         return badge3;
       default:
         return badge1;
@@ -22,12 +22,14 @@ const Workspace = () => {
   };
 
   const actionDescriptions = {
-    Create: "Easy-to-use apps for each team with no code",
-    Organize: "Work into custom hierarchies, fields, and formulas",
-    Visualize: (
+    "ADD District": "You can add a new district that can contain many schools.",
+    "ADD Schools": "Adding multiple schools to an existing district.",
+    "ADD Buildings, Room, Site Systems": (
       <>
-        <p className="m-0">Workflows with Tables, Boards, Timelines,</p>
-        <p className="m-0">Charts & more.</p>
+        <p className="m-0">
+          You can add buildings, rooms, and site systems to your school.
+        </p>
+        {/* <p className="m-0">Charts & more.</p> */}
       </>
     ),
   };
@@ -35,43 +37,48 @@ const Workspace = () => {
   return (
     <div className="flex font-inter justify-center mt-12 flex-col items-center px-8 gap-8">
       <div className="flex p-10 flex-col justify-center items-center gap-1">
-        <div className="text-black font-inter lg:text-4xl  text-xl md:text-2xl flex justify-center items-center font-bold leading-normal">
-          <p>Tools erect walls</p>
+        <div className="text-black font-inter lg:text-4xl text-xl md:text-2xl flex justify-center items-center font-bold leading-normal">
+          <p>Empowering Today’s School Facility Professional</p>
         </div>
-        <div className="text-black text-opacity-50 text-center font-inter  font-normal leading-normal lg:text-2xl  text-[12px] md:text-xl">
-          Collaboration is a struggle, when everybody uses a different app.
-          <p className="mb-0.5 lg:text-2xl  text-[12px] md:text-xl">
-            We have the solution for that.
+        <div className="text-black text-opacity-50 text-center font-inter font-normal leading-normal lg:text-2xl mt-3 text-[12px] md:text-xl">
+          A modern approach providing a unique, one-of-a-kind user experience
+          that will
+          <p className="mb-0.5 lg:text-2xl mt-3 text-[12px] md:text-xl">
+            revolutionize your facilities department
           </p>
         </div>
       </div>
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-14">
         <div className="gap-3 mb-6 md:mb-0">
-          {/* Adjusted font sizes for responsiveness */}
           <div className="text-black font-inter text-3xl sm:text-4xl md:text-4xl font-normal leading-normal">
-            <p className="m-0">Build your</p>
-            <p className="m-0">own workspace.</p>
+            <p className="m-0">Expand your</p>
+            <p className="m-0">School’s infrastructure</p>
           </div>
 
           <div>
-            <p className="m-0 font-inter text-sm sm:text-base md:text-base">{`It will take a couple of hours, but will save your `}</p>
-            <p className="m-0 font-inter text-sm sm:text-base md:text-base">{`company weeks in the long term.`}</p>
+            <p className="m-0 font-inter text-sm sm:text-base md:text-base">{`Effortlessly Expand Your School’s Infrastructure – Add Schools, Buildings,`}</p>
+            <p className="m-0 font-inter text-sm sm:text-base md:text-base">{`and Rooms with School Facility Pro’s Powerful Management Feature!`}</p>
           </div>
 
           <div className="flex flex-col font-inter md:flex-row">
             <div
               className={`mt-3 p-3 ${
-                selectedAction === "Create" && "createPosition"
-              } ${selectedAction === "Organize" && "organizePosition"} ${
-                selectedAction === "Visualize" && "visualizePosition"
+                selectedAction === "ADD District" && "createPosition"
+              } ${selectedAction === "ADD Schools" && "organizePosition"} ${
+                selectedAction === "ADD Buildings, Room, Site Systems" &&
+                "visualizePosition"
               }`}
             >
               <img className="w-2" color="orange-500" alt="" src={pointer} />
             </div>
 
             <div className="flex flex-col cursor-pointer p-2 mt-3 gap-3">
-              {["Create", "Organize", "Visualize"].map((action) => (
+              {[
+                "ADD District",
+                "ADD Schools",
+                "ADD Buildings, Room, Site Systems",
+              ].map((action) => (
                 <div
                   key={action}
                   className="flex flex-col text-black font-inter text-xl leading-normal gap-2"

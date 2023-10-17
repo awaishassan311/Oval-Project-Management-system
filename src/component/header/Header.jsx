@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { MenuIcon } from "@heroicons/react/outline";
 import { XIcon } from "@heroicons/react/outline";
 
@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [placement, setPlacement] = useState("right");
+  const [placement] = useState("right");
 
   useEffect(() => {
     const handleResize = () => {

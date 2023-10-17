@@ -1,4 +1,3 @@
-import React from "react";
 const Question = () => {
   return (
     <div className="flex justify-center">
@@ -6,10 +5,10 @@ const Question = () => {
         <div className="flex justify-center flex-col lg:flex-row">
           <div className="w-full lg:w-[44%]">
             <p className="text-black text-[30px] lg:text-[62px] font-normal">
-              Frequently Ask Question's
+              Frequently Ask Questions
             </p>
             <p className="text-xl text-gray-400 font-normal w-full lg:w-[46%] pt-5">
-              Haven't found what you're looking for? try the{" "}
+              Haven&apos;t found what you&apos;re looking for? try the{" "}
               <span className="text-xl text-[#FF6846] font-normal underline">
                 Oval Resource center or Contact us
               </span>
@@ -136,7 +135,7 @@ const Question = () => {
                   <details className="group">
                     <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                       <span> Can I try this platform for free?</span>
-                      <span class="transition group-open:rotate-180">
+                      <span className="transition group-open:rotate-180">
                         <svg
                           fill="none"
                           height="24"
@@ -181,8 +180,8 @@ const Question = () => {
                       </span>
                     </summary>
                     <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                      Documentation is available on the company's website and
-                      can be accessed by logging in to your account. The
+                      Documentation is available on the company&apos;s website
+                      and can be accessed by logging in to your account. The
                       documentation provides detailed information on how to use
                       the , as well as code examples and other resources.
                     </p>
@@ -210,8 +209,8 @@ const Question = () => {
                     </summary>
                     <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
                       If you need help with the platform or have any other
-                      questions, you can contact the company's support team by
-                      submitting a support request through the website or by
+                      questions, you can contact the company&apos;s support team
+                      by submitting a support request through the website or by
                       emailing support@We.com.
                     </p>
                   </details>
@@ -239,8 +238,8 @@ const Question = () => {
                     <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
                       We may offer discounts or promotions from time to time. To
                       stay up-to-date on the latest deals and special offers,
-                      you can sign up for the company's newsletter or follow it
-                      on social media.
+                      you can sign up for the company&apos;s newsletter or
+                      follow it on social media.
                     </p>
                   </details>
                 </div>
@@ -248,7 +247,7 @@ const Question = () => {
                   <details className="group">
                     <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                       <span> How do we compare to other similar services?</span>
-                      <span class="transition group-open:rotate-180">
+                      <span className="transition group-open:rotate-180">
                         <svg
                           fill="none"
                           height="24"
